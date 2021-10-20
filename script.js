@@ -38,7 +38,16 @@ let enough = isEnoughCandy(200);
 console.log(enough);
 
 // 6.
-
+let totalCandy = 0;
+function candyCounter(nums) {
+    for (i=0; i < nums.length; i++) {
+        totalCandy += nums[i]
+    }
+    return totalCandy;
+}
+const array = [300, 262, 400, 600];
+let yum = candyCounter(array);
+console.log(yum);
 
 
 // 7.
